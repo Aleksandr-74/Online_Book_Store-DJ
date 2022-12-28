@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL= 'users.User'
 
 # Application definition
 
@@ -39,10 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'news.apps.NewsConfig',
     'django_api.apps.DjangoApiConfig',
-    'rest_framework'
-
-
-
+    'rest_framework',
+    'django_auth_reg.apps.AuthRegConfig',
 ]
 
 MIDDLEWARE = [
@@ -123,9 +122,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
-STATICFILES_DIRS = [
-
-]
+STATICFILES_DIRS = []
 
 
 MEDIA_ROOT = BASE_DIR / 'media'

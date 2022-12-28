@@ -14,9 +14,9 @@ function createCards(response){
                 <div class="author_block"><a href="#"><h4>${item.author_id}</h4></a></div>
                 <hr class="hr_content">
                 <div class="price">
-                    <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                    <img class="rub" src="static/news/img/russian-rouble-coin-color-icon.svg" alt="">
                     <h3>${item.price}</h3>
-                    <div class="basket"><a href="#"><img class="rub" id="basket" src="static/img/icons8-продать-запас-48.png" alt=""></a></div>
+                    <div class="basket"><a href="#"><img class="rub" id="basket" src="static/news/img/icons8-продать-запас-48.png" alt=""></a></div>
                 </div>
                 `;
             document.querySelector(".wraper_content").appendChild(book)
