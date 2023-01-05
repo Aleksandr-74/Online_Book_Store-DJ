@@ -1,0 +1,36 @@
+<div class="overlay">
+    <div class="modal">
+        <div class="modal_close">&times;</div>
+        <div class="poppup-form">
+            <form method="POST" class="form_reg">
+                {% csrf_token %}
+                <div class="form_item">
+                {% for f in formReg %}
+                    {{ f }}
+                {% endfor %}
+                <button  type="submit" class="button_form submit">Зарегистрироватся</button>
+                </div>
+            </form>
+        </div>
+        <p>Уже есть аккаунт? <a class="log_in" href="/aut">Войти</a></p>
+        <div class="flashed-msg"></div>
+    </div>
+</div>
+<div class="overlay">
+    <div class="modal">
+        <div class="flashed-msg"></div>
+        <div class="modal_close">&times;</div>
+        <div class="poppup-form">
+            <form method="POST" class="form_auth">
+                {% csrf_token %}
+                <div class="form_item">
+                {% for f in formAuth %}
+                    {{ f }}
+                {% endfor %}
+                <button type="submit" class="button_form submit">Авторизоватся</button>
+                </div>
+            </form>
+        </div>
+        <p> Ещё нет аккаунта? <a class="log_register" href="/register"> Зарегистрироваться</a></p>
+    </div>
+</div>
