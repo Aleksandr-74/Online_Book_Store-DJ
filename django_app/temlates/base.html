@@ -11,8 +11,11 @@
 <body>
     {% block header %}
         {% include "inc/header.html" %}
-    {% endblock %} 
+    {% endblock %}
     <section class="section">
+    {% block form %}
+        {% include "inc/register.html" %}
+    {% endblock %}
          <div class="categories">
         </div>
         <div class="wraper">
@@ -35,6 +38,7 @@
 
 
 <script src="{% static 'news/js/fetch_api.js' %}"></script>
+<script src="{% static 'news/js/registеr.js' %}"></script>
 <script src="{% static 'news/js/adaptive.js' %}"></script>
 </body>
 </html>

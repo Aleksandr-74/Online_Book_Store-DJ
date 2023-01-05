@@ -1,10 +1,10 @@
 {% load static %}
 <div class="nav">
     <ul class="nav-list">
-        <li><a class="nav-list_a" href="#">Sign in</a></li>
-        <li><a class="nav-list_a" href="#">My account</a></li>
-        <li><a class="nav-list_a" href="#">Order status</a></li>
-        <li><a class="nav-list_a" href="#">Help</a></li>
+        <li><a class="nav-list register" href="#">Войти</a></li>
+        <li><a class="nav-list register" href="#">Мой аккаунт</a></li>
+<!--        <li><a class="nav-list_a" href="#">Order status</a></li>-->
+<!--        <li><a class="nav-list_a" href="#">Help</a></li>-->
     </ul>
 </div>
 <div class="header">
@@ -21,7 +21,7 @@
                 <div class="search-field-button">
                      <button class="search-button" type="submit">
                          <img src="{% static 'news/img/poisk-300x299.png' %}" alt="" width="25px">
-                         <span class="search_button_value">Search</span></button>
+                         <span class="search_button_value">Поиск</span></button>
                 </div>
             </form>
         </div>
@@ -32,10 +32,10 @@
                 <img class="image" src="{% static 'news/img/cart.png' %}" alt="">
             </div>
             <div class="cart-top-your-cart">
-                <p class="your-cart">Your&nbsp;cart</p>
+                <p class="your-cart">Your&nbsp;cart:</p>
             </div>
             <div class="cart-top-items">
-                <p class="amount-items">(2&nbsp;items)</p>
+<!--                <p class="amount-items">**(2&nbsp;items)**</p>-->
             </div>
         </div>
         <div class="cart-field-bottom">
